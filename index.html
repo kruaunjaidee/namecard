@@ -90,8 +90,13 @@
   <script>
     async function sendShare() {
       const result = await liff.shareTargetPicker([
-        //วางตั้งแต่ปีกาแรกของ flex
+        //หัว flex ห้ามลบ
         {
+   "type": "flex",
+  "altText": "นามบัตร",
+  "contents": 
+         //วางตั้งแต่ปีกาแรกของ  bubble
+{
   "type": "bubble",
   "body": {
     "type": "box",
@@ -310,10 +315,11 @@
     "backgroundColor": "#0000ff"
   }
 }
-//ปิด Flex
-        }//ปิดฟังก์ชั่น
-      ])
-    }
+//ปิด bubble
+} //ปิดหัว flex
+        
+      ])//ปิด const result
+    }//ปิดฟังก์ชั่น
 
 
      /* if (result) {
