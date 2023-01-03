@@ -90,10 +90,8 @@
   <script>
     async function sendShare() {
       const result = await liff.shareTargetPicker([
+        //วางตั้งแต่ปีกาแรกของ flex
         {
-          "type": "flex",
-          "altText": "Flex Message",
-          "contents": {
   "type": "bubble",
   "body": {
     "type": "box",
@@ -114,9 +112,11 @@
         "contents": [
           {
             "type": "image",
-            "url": "https://sprofile.line-scdn.net/0h7wJ7tXkKaFhnTnyE0boWJxceazJEPzFKHy10OwUbYTpSeyYIT393PwJJZm9bfycLSyF0PQJKZGtrXR8-eRiUbGB-Nm9eeC8MTC8itw",
-            "size": "600px",
-            "position": "absolute"
+            "url": "https://sv1.picz.in.th/images/2023/01/03/JUrgQI.png",
+            "size": "full",
+            "position": "absolute",
+            "aspectMode": "cover",
+            "flex": 5
           }
         ],
         "width": "150px",
@@ -296,7 +296,7 @@
             "action": {
               "type": "uri",
               "label": "📣 แชร์นามบัตร 📣",
-              "uri": "https://liff.line.me/1657785803-6yOYkOKM"
+              "uri": "https://liff.line.me/1657258095-PLAd4Lkb"
             },
             "height": "sm"
           }
@@ -309,8 +309,9 @@
     "paddingAll": "10px",
     "backgroundColor": "#0000ff"
   }
-}//ปิด Flex
-        }
+}
+//ปิด Flex
+        }//ปิดฟังก์ชั่น
       ])
     }
 
